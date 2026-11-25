@@ -16,6 +16,17 @@
   background-color: #2a2a2e;
 }
 
+/* Emphasize the student action callout */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-width: 0.25rem;
+}
+
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset details.tip > summary {
+  font-weight: 600;
+}
+
 /* Keep download lists readable */
 .download-list {
   list-style: none;
