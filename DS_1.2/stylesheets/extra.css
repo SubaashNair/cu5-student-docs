@@ -7,6 +7,15 @@
   display: none;
 }
 
+/* Light gray primary sidebar so it reads as a nav panel */
+.md-sidebar--primary {
+  background-color: #f0f0f2;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary {
+  background-color: #2a2a2e;
+}
+
 /* Keep download lists readable */
 .download-list {
   list-style: none;
