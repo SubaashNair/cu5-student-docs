@@ -136,10 +136,39 @@ body {
   margin-bottom: 0;
 }
 
-.lesson-card.kind-tip { border-left-color: var(--bs-info); }
-.lesson-card.kind-abstract { border-left-color: var(--bs-primary); }
-.lesson-card.kind-success { border-left-color: var(--bs-success); }
-.lesson-card.kind-note { border-left-color: #6f42c1; }
+.lesson-card.kind-tip {
+  background: #e7f7fb;
+  border-left-color: #0aa2c0;
+}
+.lesson-card.kind-abstract {
+  background: #eef0fb;
+  border-left-color: #3b4cca;
+}
+.lesson-card.kind-success {
+  background: #e8f6ee;
+  border-left-color: #1f9d55;
+}
+.lesson-card.kind-note {
+  background: #f3eefe;
+  border-left-color: #6f42c1;
+}
+
+[data-bs-theme="dark"] .lesson-card.kind-tip {
+  background: #123038;
+  border-left-color: #5ec8e0;
+}
+[data-bs-theme="dark"] .lesson-card.kind-abstract {
+  background: #242848;
+  border-left-color: #9aa6f5;
+}
+[data-bs-theme="dark"] .lesson-card.kind-success {
+  background: #163024;
+  border-left-color: #5dcc8a;
+}
+[data-bs-theme="dark"] .lesson-card.kind-note {
+  background: #2a1d40;
+  border-left-color: #c4a6f5;
+}
 
 .step-card {
   border: 0;
