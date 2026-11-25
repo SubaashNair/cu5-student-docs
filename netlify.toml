@@ -2,7 +2,6 @@
   command = "exit 0"
   publish = "."
 
-# Allow iframe embeds from HTTPS portals and local preview.
 [[headers]]
   for = "/*"
   [headers.values]

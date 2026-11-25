@@ -1,0 +1,33 @@
+headersOrigin = "config"
+plugins = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/subashanannair/Documents/00_forward/cu5-student-docs"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "exit 0"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Content-Security-Policy = "frame-ancestors https: http://localhost:* http://127.0.0.1:*"
