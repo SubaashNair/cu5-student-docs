@@ -3167,39 +3167,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#concept-taught" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept taught
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#by-the-end-of-this-lesson-a-student-can" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By the end of this lesson a student can
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why this matters
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-the-notebook-covers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3289,39 +3256,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#concept-taught" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept taught
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#by-the-end-of-this-lesson-a-student-can" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By the end of this lesson a student can
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why this matters
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-the-notebook-covers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3355,31 +3289,35 @@
 <p class="admonition-title">What to do today</p>
 <p>Read this brief, then download and run the lesson notebook from <a href="../../downloads/">Downloads</a>.</p>
 </div>
-<h2 id="concept-taught">Concept taught<a class="headerlink" href="#concept-taught" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Concept taught</p>
 <p>The same questions asked of a database. Connecting to SQLite, SELECT with WHERE, ORDER BY, GROUP BY and JOIN, pulling results into a DataFrame with read_sql, and the pandas equivalent of each query side by side. Inner versus left join semantics are shown with row counts, which is also the explanation of merge on D12.</p>
-<h2 id="by-the-end-of-this-lesson-a-student-can">By the end of this lesson a student can<a class="headerlink" href="#by-the-end-of-this-lesson-a-student-can" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition success">
+<p class="admonition-title">By the end of this lesson you can</p>
 <ol>
 <li>Query a database table into a DataFrame.</li>
 <li>Write a SELECT with a filter, a group and an ordering, and reproduce it in pandas.</li>
 <li>Join two tables and predict the row count for inner and left joins.</li>
 <li>Decide which part of an analysis to run in SQL and which in pandas, and say why.</li>
 </ol>
-<h2 id="why-this-matters">Why this matters<a class="headerlink" href="#why-this-matters" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Why this matters</p>
 <p>Enterprise data lives in databases, and filtering at the database before loading is the difference between a query that runs and one that exhausts memory. Join semantics learned here explain every surprising merge for the rest of the credential.</p>
+</div>
 <h2 id="what-the-notebook-covers">What the notebook covers<a class="headerlink" href="#what-the-notebook-covers" title="Permanent link">&para;</a></h2>
+<div class="notebook-outline">
 <ul>
-<li>Why SQL with Pandas?</li>
+<li>Why SQL with Pandas?<ul>
 <li>Two Approaches</li>
 <li>The Chinook Database</li>
 <li>Database Schema</li>
 <li>Table Summary</li>
-<li>What You'll Learn</li>
 <li>Setup</li>
-<li>
-<ol>
-<li>Connecting to Databases</li>
-</ol>
+</ul>
 </li>
+<li>Connecting to Databases<ul>
 <li>SQLite Connection</li>
 <li>Method 1: Using sqlite3 (Standard Library)</li>
 <li>Method 2: Using SQLAlchemy (Recommended for Production)</li>
@@ -3387,6 +3325,9 @@
 <li>SQLite (file)</li>
 <li>SQLite (in-memory)</li>
 </ul>
+</li>
+</ul>
+</div>
 
 
 

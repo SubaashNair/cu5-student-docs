@@ -7,13 +7,23 @@
   display: none;
 }
 
-/* Light gray primary sidebar so it reads as a nav panel */
+/* Primary sidebar as a distinct gray nav panel */
+.md-sidebar--primary,
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: #ebebef;
+}
+
 .md-sidebar--primary {
-  background-color: #f0f0f2;
+  border-right: 2px solid #c8c8ce;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: #25252a;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary {
-  background-color: #2a2a2e;
+  border-right-color: #3f3f46;
 }
 
 /* Emphasize the student action callout */
@@ -25,6 +35,43 @@
 .md-typeset .admonition.tip > .admonition-title,
 .md-typeset details.tip > summary {
   font-weight: 600;
+}
+
+/* Highlight must-read lesson blocks */
+.md-typeset .admonition.abstract,
+.md-typeset .admonition.success,
+.md-typeset .admonition.note,
+.md-typeset details.abstract,
+.md-typeset details.success,
+.md-typeset details.note {
+  border-radius: 0.4rem;
+}
+
+.md-typeset .admonition.abstract > .admonition-title,
+.md-typeset .admonition.success > .admonition-title,
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.abstract > summary,
+.md-typeset details.success > summary,
+.md-typeset details.note > summary {
+  font-weight: 600;
+}
+
+/* Nested notebook outline */
+.md-typeset .notebook-outline {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem 0.75rem;
+  margin: 0.5rem 0 1rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .notebook-outline {
+  background: #222;
+  border-color: #3a3a3c;
+}
+
+.md-typeset .notebook-outline ul {
+  margin: 0.25rem 0;
 }
 
 /* Keep download lists readable */

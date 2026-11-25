@@ -2967,39 +2967,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#concept-taught" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept taught
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#by-the-end-of-this-lesson-a-student-can" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By the end of this lesson a student can
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why this matters
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-the-notebook-covers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3289,39 +3256,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#concept-taught" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept taught
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#by-the-end-of-this-lesson-a-student-can" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By the end of this lesson a student can
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why this matters
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-the-notebook-covers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3355,9 +3289,12 @@
 <p class="admonition-title">What to do today</p>
 <p>Read this brief, then download and run the lesson notebook from <a href="../../downloads/">Downloads</a>.</p>
 </div>
-<h2 id="concept-taught">Concept taught<a class="headerlink" href="#concept-taught" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Concept taught</p>
 <p>Time as an index. Timestamps and DatetimeIndex, to_datetime with formats, date ranges, slicing by date, resampling to a coarser frequency with the right aggregation (size for counts, sum for totals, mean for rates), rolling windows and shifting for change over time.</p>
-<h2 id="by-the-end-of-this-lesson-a-student-can">By the end of this lesson a student can<a class="headerlink" href="#by-the-end-of-this-lesson-a-student-can" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition success">
+<p class="admonition-title">By the end of this lesson you can</p>
 <ol>
 <li>Parse dates with to_datetime, including a non-default format, and set them as the index.</li>
 <li>Slice a time-indexed frame by a date range.</li>
@@ -3365,33 +3302,35 @@
 <li>Compute a rolling mean and explain what the window does to noise.</li>
 <li>State what resample('D').size() counts and why it differs from sum().</li>
 </ol>
-<h2 id="why-this-matters">Why this matters<a class="headerlink" href="#why-this-matters" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Why this matters</p>
 <p>Sales by month, daily rides, sensor readings and website traffic are all this. The taxi resample built here is the exact first step of the ARIMA paper on DS 1.2 D21.</p>
+</div>
 <h2 id="what-the-notebook-covers">What the notebook covers<a class="headerlink" href="#what-the-notebook-covers" title="Permanent link">&para;</a></h2>
+<div class="notebook-outline">
 <ul>
-<li>Why Time Series?</li>
-<li>What You'll Learn</li>
+<li>Why Time Series?<ul>
 <li>Setup</li>
-<li>
-<ol>
-<li>DateTime Basics</li>
-</ol>
+</ul>
 </li>
+<li>DateTime Basics<ul>
 <li>Key DateTime Types in Pandas</li>
 <li>Creating Timestamps</li>
 <li>Converting Strings to DateTime with pd.to_datetime()</li>
 <li>Timedelta - Working with Durations</li>
 <li>💡 Instructor Note</li>
-<li>
-<ol>
-<li>Creating Time Series Data</li>
-</ol>
+</ul>
 </li>
+<li>Creating Time Series Data<ul>
 <li>Using pd.date_range() - Generate Date Sequences</li>
 <li>Frequency Codes Reference</li>
 <li>📊 Creating Simulated Real-World Data</li>
 <li>Scenario: Online Retail Store</li>
 </ul>
+</li>
+</ul>
+</div>
 
 
 

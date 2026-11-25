@@ -1,7 +1,12 @@
 [build]
-  command = "exit 0"
-  publish = "."
+  command = "pip install -r requirements.txt && python3 scripts/prepare_docs.py && mkdocs build -f mkdocs.DS_1.1.yml && mkdocs build -f mkdocs.DS_1.2.yml && mkdocs build -f mkdocs.DS_1.3.yml"
+  publish = "site"
 
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Allow learning-portal iframes. Replace the portal origin when you know it.
+# Until then, allow any HTTPS parent (tighten later).
 [[headers]]
   for = "/*"
   [headers.values]

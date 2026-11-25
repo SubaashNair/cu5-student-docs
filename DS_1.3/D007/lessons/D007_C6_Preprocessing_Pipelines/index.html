@@ -1795,39 +1795,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#concept-taught" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept taught
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#by-the-end-of-this-lesson-a-student-can" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By the end of this lesson a student can
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why this matters
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-the-notebook-covers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5937,39 +5904,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#concept-taught" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concept taught
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#by-the-end-of-this-lesson-a-student-can" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By the end of this lesson a student can
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why this matters
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-the-notebook-covers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6003,54 +5937,50 @@
 <p class="admonition-title">What to do today</p>
 <p>Read this brief, then download and run the lesson notebook from <a href="../../downloads/">Downloads</a>.</p>
 </div>
-<h2 id="concept-taught">Concept taught<a class="headerlink" href="#concept-taught" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Concept taught</p>
 <p>The workflow as one object. Pipeline, ColumnTransformer for mixed columns, cross-validation and grid search run on the pipeline so nothing leaks, named_steps to reach a fitted step, a custom transformer, and saving the whole thing with joblib. The wrong-way and right-way contrast makes leakage concrete.</p>
-<h2 id="by-the-end-of-this-lesson-a-student-can">By the end of this lesson a student can<a class="headerlink" href="#by-the-end-of-this-lesson-a-student-can" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition success">
+<p class="admonition-title">By the end of this lesson you can</p>
 <ol>
 <li>Build a Pipeline of transformers ending in an estimator.</li>
 <li>Route numeric and categorical columns separately with ColumnTransformer.</li>
 <li>Cross-validate and grid-search a pipeline and explain why nothing leaks.</li>
 <li>Reach a fitted step's parameters and save and reload the pipeline.</li>
 </ol>
-<h2 id="why-this-matters">Why this matters<a class="headerlink" href="#why-this-matters" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Why this matters</p>
 <p>This is the object that goes to production. Every later day's model should live inside one; the D07 paper's hand-over note is written for the engineer who runs it.</p>
+</div>
 <h2 id="what-the-notebook-covers">What the notebook covers<a class="headerlink" href="#what-the-notebook-covers" title="Permanent link">&para;</a></h2>
+<div class="notebook-outline">
 <ul>
-<li>What you will be able to do</li>
+<li>What you will be able to do<ul>
 <li>The one idea to hold on to</li>
-<li>
-<ol>
-<li>Why Use Pipelines?</li>
-</ol>
+</ul>
 </li>
+<li>Why Use Pipelines?<ul>
 <li>The Problem: Manual Preprocessing</li>
 <li>WRONG WAY - prone to errors and data leakage</li>
 <li>The Solution: Pipelines</li>
 <li>CORRECT WAY - clean and safe</li>
-<li>
-<ol>
-<li>Understanding Data Leakage</li>
-</ol>
+</ul>
 </li>
+<li>Understanding Data Leakage<ul>
 <li>Common Sources of Leakage in Preprocessing:</li>
 <li>Correct Workflow:</li>
-<li>
-<ol>
-<li>Building Your First Pipeline</li>
-</ol>
-</li>
-<li>Accessing Pipeline Components</li>
-<li>
-<ol>
-<li>ColumnTransformer: Handling Mixed Data Types</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Complete Pipeline with Model</li>
-</ol>
-</li>
 </ul>
+</li>
+<li>Building Your First Pipeline<ul>
+<li>Accessing Pipeline Components</li>
+</ul>
+</li>
+<li>ColumnTransformer: Handling Mixed Data Types</li>
+<li>Complete Pipeline with Model</li>
+</ul>
+</div>
 
 
 
