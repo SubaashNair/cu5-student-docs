@@ -7,23 +7,35 @@
   display: none;
 }
 
-/* Primary sidebar as a distinct gray nav panel */
-.md-sidebar--primary,
+/* Side nav panel. On desktop the sidebar box itself is height 0; the
+   scrollwrap is the column students actually see, so paint that. */
 .md-sidebar--primary .md-sidebar__scrollwrap {
   background-color: #ebebef;
-}
-
-.md-sidebar--primary {
   border-right: 2px solid #c8c8ce;
 }
 
-[data-md-color-scheme="slate"] .md-sidebar--primary,
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
   background-color: #25252a;
+  border-right-color: #3f3f46;
 }
 
-[data-md-color-scheme="slate"] .md-sidebar--primary {
-  border-right-color: #3f3f46;
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    padding-top: 0;
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    height: calc(100vh - 2.4rem);
+    max-height: calc(100vh - 2.4rem);
+    margin-top: 0;
+    padding-top: 0.8rem;
+    /* Fill the white gutter to the left so this reads as a side panel. */
+    box-shadow: -100vw 0 0 #ebebef;
+  }
+
+  [data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
+    box-shadow: -100vw 0 0 #25252a;
+  }
 }
 
 /* Emphasize the student action callout */
@@ -37,14 +49,16 @@
   font-weight: 600;
 }
 
-/* Highlight must-read lesson blocks */
+/* Concept, objectives, and why: the brief students should actually read */
 .md-typeset .admonition.abstract,
 .md-typeset .admonition.success,
 .md-typeset .admonition.note,
 .md-typeset details.abstract,
 .md-typeset details.success,
 .md-typeset details.note {
+  border-left-width: 0.35rem;
   border-radius: 0.4rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
 .md-typeset .admonition.abstract > .admonition-title,

@@ -9,8 +9,6 @@ redirects = []
 [build]
 publish = "/Users/subashanannair/Documents/00_forward/cu5-student-docs"
 publishOrigin = "config"
-commandOrigin = "config"
-command = "exit 0"
 
 [build.environment]
 
