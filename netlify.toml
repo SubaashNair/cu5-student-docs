@@ -1,0 +1,9 @@
+[build]
+  command = "exit 0"
+  publish = "."
+
+# Allow iframe embeds from HTTPS portals and local preview.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors https: http://localhost:* http://127.0.0.1:*"

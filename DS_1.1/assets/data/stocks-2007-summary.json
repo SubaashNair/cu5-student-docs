@@ -1,0 +1,102 @@
+[
+  {
+    "company": "Apple Inc.",
+    "symbol": "AAPL",
+    "price_2007": 195.43
+  },
+  {
+    "company": "Microsoft Corporation",
+    "symbol": "MSFT",
+    "price_2007": 34.92
+  },
+  {
+    "company": "Google Inc.",
+    "symbol": "GOOG",
+    "price_2007": 691.48
+  },
+  {
+    "company": "Amazon.com Inc.",
+    "symbol": "AMZN",
+    "price_2007": 89.15
+  },
+  {
+    "company": "Tesla Inc.",
+    "symbol": "TSLA",
+    "price_2007": 14.5
+  },
+  {
+    "company": "Meta Platforms Inc.",
+    "symbol": "META",
+    "price_2007": 32.5
+  },
+  {
+    "company": "Netflix Inc.",
+    "symbol": "NFLX",
+    "price_2007": 24.56
+  },
+  {
+    "company": "NVIDIA Corporation",
+    "symbol": "NVDA",
+    "price_2007": 35.78
+  },
+  {
+    "company": "Intel Corporation",
+    "symbol": "INTC",
+    "price_2007": 26.43
+  },
+  {
+    "company": "Cisco Systems Inc.",
+    "symbol": "CSCO",
+    "price_2007": 28.15
+  },
+  {
+    "company": "Oracle Corporation",
+    "symbol": "ORCL",
+    "price_2007": 21.89
+  },
+  {
+    "company": "IBM",
+    "symbol": "IBM",
+    "price_2007": 108.52
+  },
+  {
+    "company": "Salesforce Inc.",
+    "symbol": "CRM",
+    "price_2007": 8.75
+  },
+  {
+    "company": "Adobe Inc.",
+    "symbol": "ADBE",
+    "price_2007": 42.88
+  },
+  {
+    "company": "PayPal Holdings Inc.",
+    "symbol": "PYPL",
+    "price_2007": 38.2
+  },
+  {
+    "company": "Walt Disney Company",
+    "symbol": "DIS",
+    "price_2007": 34.16
+  },
+  {
+    "company": "Coca-Cola Company",
+    "symbol": "KO",
+    "price_2007": 60.32
+  },
+  {
+    "company": "Walmart Inc.",
+    "symbol": "WMT",
+    "price_2007": 49.38
+  },
+  {
+    "company": "Johnson & Johnson",
+    "symbol": "JNJ",
+    "price_2007": 66.72
+  },
+  {
+    "company": "Procter & Gamble Company",
+    "symbol": "PG",
+    "price_2007": 72.45
+  }
+]

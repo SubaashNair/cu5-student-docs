@@ -1,0 +1,23 @@
+/* Tighten chrome for learning-portal iframe embeds */
+.md-header__button.md-logo {
+  margin: 0;
+}
+
+.md-footer-meta {
+  display: none;
+}
+
+/* Keep download lists readable */
+.download-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.download-list li {
+  margin: 0.35rem 0;
+}
+
+.download-list a {
+  font-family: var(--md-code-font-family);
+  font-size: 0.85rem;
+}
