@@ -120,54 +120,81 @@ body {
 }
 
 .lesson-card {
+  background: #fff;
   border: 0;
-  border-left: 0.35rem solid var(--bs-border-color);
-  border-radius: 0.85rem;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
 .lesson-card .card-header {
-  background: transparent;
   border-bottom: 0;
-  padding-bottom: 0;
+  color: #fff;
+  font-weight: 680;
+  padding: 0.7rem 1.15rem;
+}
+
+.lesson-card .card-body {
+  background: #fff;
+  color: #1c1f2a;
+  line-height: 1.6;
+  padding: 0.95rem 1.15rem 1.1rem;
 }
 
 .lesson-card .card-body > :last-child {
   margin-bottom: 0;
 }
 
-.lesson-card.kind-tip {
-  background: #e7f7fb;
-  border-left-color: #0aa2c0;
-}
-.lesson-card.kind-abstract {
-  background: #eef0fb;
-  border-left-color: #3b4cca;
-}
-.lesson-card.kind-success {
-  background: #e8f6ee;
-  border-left-color: #1f9d55;
-}
-.lesson-card.kind-note {
-  background: #f3eefe;
-  border-left-color: #6f42c1;
+.lesson-card.kind-tip .card-header { background: #0b7d96; }
+.lesson-card.kind-abstract .card-header { background: #3b4cca; }
+.lesson-card.kind-success .card-header { background: #1b7a45; }
+.lesson-card.kind-note .card-header { background: #6f42c1; }
+
+.lesson-card ol {
+  counter-reset: lesson-step;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
-[data-bs-theme="dark"] .lesson-card.kind-tip {
-  background: #123038;
-  border-left-color: #5ec8e0;
+.lesson-card ol > li {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.75rem;
 }
-[data-bs-theme="dark"] .lesson-card.kind-abstract {
-  background: #242848;
-  border-left-color: #9aa6f5;
+
+.lesson-card ol > li + li {
+  margin-top: 0.65rem;
 }
-[data-bs-theme="dark"] .lesson-card.kind-success {
-  background: #163024;
-  border-left-color: #5dcc8a;
+
+.lesson-card ol > li::before {
+  align-items: center;
+  background: #1f9d55;
+  border-radius: 50%;
+  color: #fff;
+  content: counter(lesson-step);
+  counter-increment: lesson-step;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 1.6rem;
+  justify-content: center;
+  line-height: 1;
+  width: 1.6rem;
 }
-[data-bs-theme="dark"] .lesson-card.kind-note {
-  background: #2a1d40;
-  border-left-color: #c4a6f5;
+
+.lesson-card ol > li > p {
+  margin: 0;
+}
+
+[data-bs-theme="dark"] .lesson-card,
+[data-bs-theme="dark"] .lesson-card .card-body {
+  background: #212529;
+  color: #dee2e6;
+}
+
+[data-bs-theme="dark"] .lesson-card .card-header {
+  color: #fff;
 }
 
 .step-card {
